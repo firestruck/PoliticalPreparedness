@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- DONE: Add necessary string values -->
+    <string name="app_name">Political Preparedness</string>
+    <string name="txt_upcoming_elections">Upcoming Elections</string>
+    <string name="txt_representatives">Find My Representatives</string>
+    <string name="txt_saved_elections">Saved Elections</string>
+    <string name="txt_election_info">Election Information</string>
+    <string name="txt_ballot_info">Ballot Information</string>
+    <string name="txt_voting_locations">Voting Locations</string>
+    <string name="txt_state_correspondence">State Correspondence</string>
+    <string name="txt_follow">Follow Election</string>
+    <string name="txt_unfollow">Unfollow Election</string>
+    <string name="iv_facebook">Facebook</string>
+    <string name="iv_twitter">Twitter</string>
+    <string name="iv_www">Web</string>
+    <string name="txt_find_my_rep">Find My Representatives</string>
+    <string name="txt_location">Use My Location</string>
+    <string name="txt_state">State</string>
+    <string name="txt_address_line_1">Address Line 1</string>
+    <string name="txt_address_line_2">Address Line 2</string>
+    <string name="txt_city">City</string>
+    <string name="txt_zip">Zip</string>
+
+</resources>

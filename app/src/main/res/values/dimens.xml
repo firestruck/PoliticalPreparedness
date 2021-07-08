@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- DONE: Add necessary dimension values -->
+    <dimen name="default_padding">8dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="rv_margin">8dp</dimen>
+    <dimen name="url_margin">4dp</dimen>
+
+</resources>

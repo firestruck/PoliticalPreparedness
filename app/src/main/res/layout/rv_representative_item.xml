@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="representative"
+            type="com.example.android.politicalpreparedness.ui.representative.model.Representative" />
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/default_margin">
+
+        <ImageView
+            android:id="@+id/iv_representative_photo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@null"
+            android:layout_marginStart="@dimen/default_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_profile"
+            profileImage="@{representative.official.photoUrl}"/>
+
+        <TextView
+            android:id="@+id/txt_office"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin"
+            style="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toEndOf="@+id/iv_representative_photo"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@{representative.office.name}"
+            tools:text="Minister "/>
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin"
+            app:layout_constraintStart_toEndOf="@+id/iv_representative_photo"
+            app:layout_constraintTop_toBottomOf="@id/txt_office"
+            android:text="@{representative.official.name}"
+            tools:text="Name"/>
+
+        <TextView
+            android:id="@+id/txt_party"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin"
+            app:layout_constraintStart_toEndOf="@+id/iv_representative_photo"
+            app:layout_constraintTop_toBottomOf="@+id/txt_name"
+            android:text="@{representative.official.party}"
+            tools:text="Party"/>
+
+        <ImageView
+            android:id="@+id/iv_www"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_marginTop="@dimen/url_margin"
+            app:layout_constraintEnd_toStartOf="@id/iv_facebook"
+            app:layout_constraintTop_toBottomOf="@id/txt_office"
+            app:srcCompat="@drawable/ic_www"
+            android:contentDescription="@string/iv_www"/>
+
+        <ImageView
+            android:id="@+id/iv_facebook"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_marginTop="@dimen/url_margin"
+            app:layout_constraintEnd_toStartOf="@id/iv_twitter"
+            app:layout_constraintTop_toBottomOf="@id/txt_office"
+            app:srcCompat="@drawable/ic_facebook"
+            android:contentDescription="@string/iv_facebook"/>
+
+        <ImageView
+            android:id="@+id/iv_twitter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_marginTop="@dimen/url_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_office"
+            app:srcCompat="@drawable/ic_twitter"
+            android:contentDescription="@string/iv_twitter"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
